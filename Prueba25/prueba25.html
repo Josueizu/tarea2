@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego 21</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Juego de Cartas 21</h1>
+  <div class="container">
+    <div class="card-container">
+      <div>
+        <h2>Jugador</h2>
+        <div id="jugador-cartas"></div>
+        <p class="points">Puntos: <span id="jugador-puntos">0</span></p>
+      </div>
+    </div>
+    <div class="card-container">
+      <div>
+        <h2>Máquina</h2>
+        <div id="maquina-cartas"></div>
+        <p class="points">Puntos: <span id="maquina-puntos">0</span></p>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button id="iniciar-btn">Empezar</button>
+      <button id="otra-carta-btn" disabled>Otra Carta</button>
+      <button id="finalizar-btn" disabled>Finalizar</button>
+      <button id="jugar-nuevo-btn" disabled>Jugar de Nuevo</button>
+    </div>
+
+    <div id="estadisticas"></div>
+
+    <div id="estadisticas-partidas">
+      <h2>Estadísticas de Partidas</h2>
+      <div id="tabla-partidas"></div>
+    </div>
+    
+
+    <div id="loader" class="loader"></div>
+
+    <p class="result" id="resultado"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
